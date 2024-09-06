@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Finanzas Personales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Programa de Finanzas Personales</h1>
+        <form id="financeForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="clave">Clave:</label>
+            <input type="password" id="clave" required>
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required>
+            
+            <label for="ingreso">Ingreso Total:</label>
+            <input type="number" id="ingreso" required>
+
+            <button type="button" onclick="calcularPresupuesto()">Calcular Presupuesto</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
